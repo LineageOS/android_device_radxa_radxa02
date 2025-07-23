@@ -22,9 +22,6 @@ TARGET_DTB_NAME := sm1_s905d3_radxa02
 TARGET_KERNEL_EXT_MODULES := \
     dhd-driver/bcmdhd.101.10.361.x
 
-## Kernel config
-TARGET_KERNEL_VARIANT_CONFIG ?= sm1_variant_defconfig
-
 ## Partitions
 BOARD_SUPER_PARTITION_SIZE := 2084569088
 
