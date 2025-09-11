@@ -1,0 +1,4 @@
+filegroup {
+    name: "vnd_radxa02.txt",
+    srcs: ["vnd_radxa02.txt"],
+}
