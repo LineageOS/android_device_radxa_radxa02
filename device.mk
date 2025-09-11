@@ -26,6 +26,11 @@ TARGET_AMLOGIC_SOC := sm1
 ## TEE
 TARGET_HAS_TEE := false
 
+## Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/broadcom/libbt
+
 ## Wi-Fi firmware
 include kernel/amlogic/kernel-modules/dhd-driver/firmware/wifi/wifi.mk
 
