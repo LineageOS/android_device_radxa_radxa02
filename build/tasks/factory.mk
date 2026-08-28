@@ -18,6 +18,7 @@ ifneq ($(filter radxa02 radxa02_car radxa02_tab,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := device/radxa/radxa02
 FACTORY_PATH := device/radxa/radxa02/factory
+VENDOR_PATH := vendor/radxa/radxa02
 
 RADIO_FILES := $(wildcard $(FACTORY_PATH)/bootfiles/*)
 $(foreach f, $(notdir $(RADIO_FILES)), \
@@ -62,9 +63,9 @@ INSTALL_IMAGES := \
 $(INSTALLED_AML_INSTALL_PACKAGE_TARGET): $(addprefix $(PRODUCT_OUT)/,$(INSTALL_IMAGES)) $(ACP) $(AML_IMAGE_TOOL)
 	$(hide) mkdir -p $(PRODUCT_INSTALL_OUT)
 ifeq ($(WITH_CONSOLE_BL),true)
-	$(hide) $(call aml-copy-install-file, $(FACTORY_PATH)/bootfiles/bootloader-console.img, u-boot.bin)
+	$(hide) $(call aml-copy-install-file, $(VENDOR_PATH)/radio/bootloader-console.img, u-boot.bin)
 else
-	$(hide) $(call aml-copy-install-file, $(FACTORY_PATH)/bootfiles/bootloader.img, u-boot.bin)
+	$(hide) $(call aml-copy-install-file, $(VENDOR_PATH)/radio/bootloader.img, u-boot.bin)
 endif
 	$(hide) $(call aml-copy-install-file, $(PRODUCT_OUT)/logo.img)
 	$(hide) $(call aml-copy-install-file, $(FACTORY_PATH)/aml_sdc_burn.ini)
