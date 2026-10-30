@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9aa1e34_ad2ea8c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-30T18:09:02Z",
+      "side": 1,
+      "message": "Let\u0027s import this to device tree instead.",
+      "revId": "6467b3e6bf976c015fb8d8a4a6eaf2020eb7c626",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
