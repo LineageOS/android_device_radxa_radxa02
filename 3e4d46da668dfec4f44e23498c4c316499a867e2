@@ -22,6 +22,30 @@
       },
       "revId": "3e4d46da668dfec4f44e23498c4c316499a867e2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4147f2bb_c4af0c11",
+        "filename": "configs/mesondisplay.cfg",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-02T03:07:15Z",
+      "side": 1,
+      "message": "so, I came here to say \"you\u0027re wrong this should be g12a as the driver doesn\u0027t accept sm1 and g12a is closest BUT...\"\n\n```\nnolenjohnson@ODS-PROD:~/dumps$ cat ./google/sabrina-12/dump/vendor/etc/mesondisplay.cfg\n# 1.device type [MID | MBOX | TV]\n# 2.soc type [meson3 | meson6 | meson8 | meson8b | meson8m2]\n#\n# 3.if the device is MID, need set fb0 \u0026 fb1 width height fbbits triplebuffer\n# example: MID meson8b 768 1024 32 1 1280 720 32 1\n# busybox fbset -fb /dev/graphics/fb0 -g 768 1024 768 3072 32\n# busybox fbset -fb /dev/graphics/fb1 -g 1280 720 1280 2160 32\n#\n#   if the device is MBOX, need set default ui [720p | 1080p]\n\nMBOX gxl 1080p\n```\n\nbut I have no clue if that works with our current blobs.\n\nPersonally to keep the commit isolated I\u0027d do \"Copy this\" then follow up with \"match Sabrina stock\" as a new commit.",
+      "parentUuid": "d8c13492_0a621819",
+      "range": {
+        "startLine": 11,
+        "startChar": 5,
+        "endLine": 11,
+        "endChar": 9
+      },
+      "revId": "3e4d46da668dfec4f44e23498c4c316499a867e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
