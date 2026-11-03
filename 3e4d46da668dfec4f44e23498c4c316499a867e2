@@ -46,6 +46,30 @@
       },
       "revId": "3e4d46da668dfec4f44e23498c4c316499a867e2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4458d02a_0ebf3406",
+        "filename": "configs/mesondisplay.cfg",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-03T15:11:31Z",
+      "side": 1,
+      "message": "Then we\u0027ll leave it commonized and re-pick this at a later time.",
+      "parentUuid": "4147f2bb_c4af0c11",
+      "range": {
+        "startLine": 11,
+        "startChar": 5,
+        "endLine": 11,
+        "endChar": 9
+      },
+      "revId": "3e4d46da668dfec4f44e23498c4c316499a867e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
